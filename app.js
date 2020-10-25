@@ -1,6 +1,6 @@
 class Media {
 
-    constructor(keyOne){
+    constructor(title){
 
         this._title=title;
         this._isCheckedOut=false;
@@ -20,7 +20,11 @@ class Media {
         return this._ratings;
     }
 
-    set isCheckedOut(){
-        this._isCheckedOut=false
+    set isCheckedOut(value){
+        this._isCheckedOut= value;
+    }
+
+    toggleCheckOutStatus(){
+       this.isCheckedOut=!this.isCheckedOut
     }
 }
