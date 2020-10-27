@@ -34,4 +34,19 @@ class Media {
             return ratingSum/this.rating.length;
         })
     }
+
+    addRating(rating){
+        this.ratings.push(rating);
+    }
+}
+
+class Book extends Media {
+      constructor(author,title,pages){
+          this._author=author;
+          this._title=title;
+          this._pages=pages;
+      }
+      super(){
+        
+      }
 }
