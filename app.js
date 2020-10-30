@@ -75,6 +75,9 @@ class Movie extends Media {
       const historyOfEverything = new Book('Bill Bryson','A Short History of Nearly Everyting',544);
       console.log(historyOfEverything)
 
+      historyOfEverything.toggleCheckOutStatus();
+      
+
     
       
      
